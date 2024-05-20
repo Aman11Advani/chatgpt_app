@@ -17,7 +17,7 @@ app.get("/", async (req, res) => {
 });
 
 const configuration = new Configuration({
-    apiKey: "sk-proj-k5sN15ElyKeDQKEPBHQiT3BlbkFJ6Db7AgiIajU2NnUXY4Bd",
+    apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
